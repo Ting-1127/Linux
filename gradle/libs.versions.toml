@@ -1,5 +1,14 @@
 [versions]
-agp = "9.0.1"
+agp = "8.9.0"
+kotlin = "2.0.21"
+coroutines = "1.10.2"
+commonsCompress = "1.28.0"
+
+[libraries]
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+commons-compress = { group = "org.apache.commons", name = "commons-compress", version.ref = "commonsCompress" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
